@@ -20,7 +20,7 @@ jobs:
       - name: Setup Gradle Wrapper
         run: |
           cd ChronosApp
-          gradle wrapper --gradle-version 8.2
+          gradle wrapper --gradle-version 8.0
 
       - name: Grant Execute Permission for Gradle
         run: chmod +x ChronosApp/gradlew
