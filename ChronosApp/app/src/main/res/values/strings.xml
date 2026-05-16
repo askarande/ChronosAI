@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chronos AI</string>
+    <string name="clock_widget_label">Chronos Clock Widget</string>
+    <string name="tab_clock">Clock</string>
+    <string name="tab_stopwatch">Stopwatch</string>
+    <string name="tab_timer">Timer</string>
+    <string name="tab_focus">Focus</string>
+    <string name="tab_world">World</string>
+    <string name="tab_alarm">Alarm</string>
+    <string name="tab_music">Music</string>
+    <string name="tab_settings">Settings</string>
+    <string name="alarm_channel_name">Alarms</string>
+    <string name="timer_done">Timer finished!</string>
+    <string name="pomodoro_done">Focus session complete!</string>
+</resources>
