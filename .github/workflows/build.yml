@@ -1,7 +1,7 @@
 name: Build Chronos AI APK
 
 on:
-  workflow_dispatch: # Allows you to manually click "Run workflow"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,8 +16,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      # FIX: Installs the missing Gradle wrapper files directly on the server
+      - name: Setup Gradle Wrapper
+        run: |
+          cd ChronosApp
+          gradle wrapper --gradle-version 8.2
+
       - name: Grant Execute Permission for Gradle
-        run: chmod +x ChronosApp/gradlew || true
+        run: chmod +x ChronosApp/gradlew
 
       - name: Build Debug APK
         run: |
